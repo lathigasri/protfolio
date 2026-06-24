@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lathiga Sri P — CS Engineer Portfolio</title>
+<meta name="description" content="Portfolio of Lathiga Sri P — Computer Science & Engineering student skilled in Java, JavaScript, Firebase, and web development." />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230B1829'/%3E%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='%234DD9FF' stroke-width='4'/%3E%3Cline x1='50' y1='10' x2='50' y2='90' stroke='%234DD9FF' stroke-width='2'/%3E%3Cline x1='10' y1='50' x2='90' y2='50' stroke='%234DD9FF' stroke-width='2'/%3E%3Ccircle cx='50' cy='50' r='6' fill='%23FFB830'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#hero" class="nav-logo">LS<span class="nav-dot">.</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-burger" id="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <a href="#about" class="mm-link">About</a>
+  <a href="#skills" class="mm-link">Skills</a>
+  <a href="#projects" class="mm-link">Projects</a>
+  <a href="#experience" class="mm-link">Experience</a>
+  <a href="#contact" class="mm-link">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="bp-grid" aria-hidden="true"></div>
+
+  <div class="crosshair" aria-hidden="true">
+    <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="80" cy="80" r="60" stroke="#4DD9FF" stroke-width="1" stroke-dasharray="6 4" opacity="0.4"/>
+      <circle cx="80" cy="80" r="36" stroke="#4DD9FF" stroke-width="1" opacity="0.5"/>
+      <circle cx="80" cy="80" r="8" fill="#FFB830" opacity="0.9"/>
+      <line x1="80" y1="0" x2="80" y2="60" stroke="#4DD9FF" stroke-width="1" opacity="0.6"/>
+      <line x1="80" y1="100" x2="80" y2="160" stroke="#4DD9FF" stroke-width="1" opacity="0.6"/>
+      <line x1="0" y1="80" x2="44" y2="80" stroke="#4DD9FF" stroke-width="1" opacity="0.6"/>
+      <line x1="116" y1="80" x2="160" y2="80" stroke="#4DD9FF" stroke-width="1" opacity="0.6"/>
+      <text x="88" y="16" fill="#FFB830" font-family="JetBrains Mono" font-size="9" opacity="0.7">LS-001</text>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow"><span class="dot-blink"></span> AVAILABLE FOR OPPORTUNITIES</p>
+    <h1 class="hero-name">
+      <span class="name-l reveal-up">LATHIGA</span>
+      <span class="name-s reveal-up delay-1">SRI P</span>
+    </h1>
+    <p class="hero-title"><span id="typewriter"></span><span class="cursor">|</span></p>
+    <p class="hero-loc">
+      <svg width="12" height="14" viewBox="0 0 12 14" fill="none"><path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#7B9BB8"/></svg>
+      Namakkal, Tamil Nadu
+    </p>
+    <div class="hero-stats">
+      <div class="stat reveal-up delay-2">
+        <span class="stat-num">8.31</span>
+        <span class="stat-label">CGPA</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat reveal-up delay-2">
+        <span class="stat-num">3</span>
+        <span class="stat-label">PROJECTS</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat reveal-up delay-2">
+        <span class="stat-num">2</span>
+        <span class="stat-label">INTERNSHIPS</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat reveal-up delay-2">
+        <span class="stat-num">L2</span>
+        <span class="stat-label">HACKATHON</span>
+      </div>
+    </div>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="mailto:lathigasri2006@gmail.com" class="btn-ghost">Get in Touch</a>
+    </div>
+  </div>
+
+  <div class="bp-coords" aria-hidden="true">
+    <span class="coord coord-tl">X:000 Y:000</span>
+    <span class="coord coord-tr">X:100 Y:000</span>
+    <span class="coord coord-bl">X:000 Y:100</span>
+    <span class="coord coord-br">X:100 Y:100</span>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">ABOUT</span>
+      <h2 class="section-title">Who I Am</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal-up">
+        <p>I'm a <strong>Computer Science & Engineering student</strong> at K.S.R. Institute for Engineering and Technology, Tiruchengode, currently in my second year with a CGPA of 8.31.</p>
+        <p>I build things that solve real problems — from civic issue reporting platforms to automated resume builders. My work spans Java back-end systems, Firebase real-time apps, and responsive web interfaces.</p>
+        <p>Outside code, I represent my college in <strong>volleyball</strong> at inter-college competitions and qualified to Level 2 of the <strong>Smart India Women's Hackathon</strong>.</p>
+        <a href="mailto:lathigasri2006@gmail.com" class="btn-primary">lathigasri2006@gmail.com</a>
+      </div>
+      <div class="about-card reveal-up delay-1">
+        <div class="bp-card">
+          <p class="bp-card-label">EDUCATION FILE</p>
+          <div class="edu-item">
+            <span class="edu-degree">B.E. Computer Science & Engineering</span>
+            <span class="edu-school">K.S.R. Institute for Engineering and Technology</span>
+            <span class="edu-year">2023 – Present</span>
+            <span class="edu-cgpa">CGPA: <strong>8.31</strong></span>
+          </div>
+          <div class="edu-divider"></div>
+          <div class="edu-item">
+            <span class="edu-degree">Higher Secondary Certificate (12th)</span>
+            <span class="edu-school">Reliance Matric Hr. Sec. School, Komarapalayam</span>
+            <span class="edu-year">2022 – 2023</span>
+            <span class="edu-cgpa">Score: <strong>73.5%</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section section-dark" id="skills">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">SKILLS</span>
+      <h2 class="section-title">Tech Stack</h2>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-module reveal-up">
+        <p class="skill-module-label">LANGUAGES</p>
+        <div class="skill-tags">
+          <span class="tag tag-cyan">Java</span>
+          <span class="tag tag-cyan">Python</span>
+          <span class="tag tag-cyan">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skill-module reveal-up delay-1">
+        <p class="skill-module-label">DATABASE</p>
+        <div class="skill-tags">
+          <span class="tag tag-amber">MySQL</span>
+          <span class="tag tag-amber">Firebase</span>
+        </div>
+      </div>
+
+      <div class="skill-module reveal-up delay-2">
+        <p class="skill-module-label">WEB</p>
+        <div class="skill-tags">
+          <span class="tag tag-cyan">HTML</span>
+          <span class="tag tag-cyan">CSS</span>
+          <span class="tag tag-cyan">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skill-module reveal-up delay-3">
+        <p class="skill-module-label">TOOLS & PLATFORMS</p>
+        <div class="skill-tags">
+          <span class="tag tag-amber">Git</span>
+          <span class="tag tag-amber">GitHub</span>
+          <span class="tag tag-amber">Firebase</span>
+        </div>
+      </div>
+
+      <div class="skill-module reveal-up delay-1">
+        <p class="skill-module-label">OPERATING SYSTEMS</p>
+        <div class="skill-tags">
+          <span class="tag tag-ghost">Windows</span>
+          <span class="tag tag-ghost">macOS</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">PROJECTS</span>
+      <h2 class="section-title">What I've Built</h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal-up">
+        <div class="project-dog-ear" aria-hidden="true"></div>
+        <span class="project-num">01</span>
+        <h3 class="project-title">Crowdsourced Civic Issue Reporting System</h3>
+        <p class="project-desc">A civic issue reporting and tracking platform. Citizens can submit complaints; admins monitor and resolve them in real time. Built with user authentication, complaint management, and status tracking.</p>
+        <ul class="project-highlights">
+          <li>Real-time data via Firebase Cloud Firestore</li>
+          <li>Admin dashboard for complaint monitoring</li>
+          <li>User authentication & complaint lifecycle</li>
+        </ul>
+        <div class="project-stack">
+          <span class="tag tag-cyan">HTML</span>
+          <span class="tag tag-cyan">CSS</span>
+          <span class="tag tag-cyan">JavaScript</span>
+          <span class="tag tag-amber">Firebase</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up delay-1">
+        <div class="project-dog-ear" aria-hidden="true"></div>
+        <span class="project-num">02</span>
+        <h3 class="project-title">Automated Resume Builder</h3>
+        <p class="project-desc">A desktop application that takes user details and auto-generates a formatted professional resume. Designed a user-friendly interface for entering and managing resume data, with persistent storage.</p>
+        <ul class="project-highlights">
+          <li>Dynamic resume generation from form input</li>
+          <li>MySQL backend for user data storage</li>
+          <li>Clean interface for non-technical users</li>
+        </ul>
+        <div class="project-stack">
+          <span class="tag tag-cyan">Java</span>
+          <span class="tag tag-amber">MySQL</span>
+          <span class="tag tag-ghost">JDBC</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up delay-2">
+        <div class="project-dog-ear" aria-hidden="true"></div>
+        <span class="project-num">03</span>
+        <h3 class="project-title">Student Management System</h3>
+        <p class="project-desc">A system to manage student fee records with structured database tables. Automated data management processes to reduce manual effort and errors, with full JDBC connectivity.</p>
+        <ul class="project-highlights">
+          <li>JDBC-based Java–MySQL integration</li>
+          <li>Structured schema for fee data</li>
+          <li>Automated data management workflows</li>
+        </ul>
+        <div class="project-stack">
+          <span class="tag tag-cyan">Java</span>
+          <span class="tag tag-amber">MySQL</span>
+          <span class="tag tag-ghost">JDBC</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section section-dark" id="experience">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">EXPERIENCE</span>
+      <h2 class="section-title">Internships</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">July 2024</span>
+          <h3 class="timeline-role">Web Development Intern</h3>
+          <span class="timeline-company">Accent Techno Soft, Coimbatore</span>
+          <ul class="timeline-points">
+            <li>Developed responsive web pages using HTML and CSS.</li>
+            <li>Gained exposure to full-stack development basics.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-up delay-1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">June 2025</span>
+          <h3 class="timeline-role">Cloud Computing Intern</h3>
+          <span class="timeline-company">Infronex IT Product and Services</span>
+          <ul class="timeline-points">
+            <li>Studied cloud architecture, service and deployment models.</li>
+            <li>Learned IaaS, PaaS, SaaS and virtualization concepts.</li>
+            <li>Explored implementation strategies in cloud environments.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTS & ACHIEVEMENTS -->
+<section class="section" id="achievements">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">RECOGNITION</span>
+      <h2 class="section-title">Certifications &amp; Achievements</h2>
+    </div>
+    <div class="rec-grid">
+
+      <div class="cert-card reveal-up">
+        <p class="cert-card-label">CERTIFICATIONS</p>
+        <ul class="cert-list">
+          <li>Full Stack Development</li>
+          <li>NPTEL — Cloud Computing</li>
+          <li>NPTEL — Sustainable Happiness</li>
+          <li>TNWISE 2025 — Hackathon Participation</li>
+        </ul>
+      </div>
+
+      <div class="ach-card reveal-up delay-1">
+        <div class="ach-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><polygon points="16,2 20,12 31,12 22,19 25,30 16,23 7,30 10,19 1,12 12,12" fill="#FFB830" opacity="0.15"/><polygon points="16,2 20,12 31,12 22,19 25,30 16,23 7,30 10,19 1,12 12,12" stroke="#FFB830" stroke-width="1.5" fill="none"/></svg>
+        </div>
+        <h3 class="ach-title">Smart India Women's Hackathon</h3>
+        <p class="ach-desc">Level 2 Qualifier — demonstrated innovation, teamwork, and software development skills at the national level.</p>
+        <span class="ach-tag">LEVEL 2 QUALIFIER</span>
+      </div>
+
+      <div class="ach-card reveal-up delay-2">
+        <div class="ach-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="10" r="7" stroke="#4DD9FF" stroke-width="1.5" fill="none"/><path d="M8 28c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#4DD9FF" stroke-width="1.5" fill="none"/><line x1="12" y1="24" x2="20" y2="24" stroke="#4DD9FF" stroke-width="1" opacity="0.4"/></svg>
+        </div>
+        <h3 class="ach-title">Volleyball Player</h3>
+        <p class="ach-desc">Represented college in inter-college volleyball competitions, bringing the same teamwork and competitive drive to every project.</p>
+        <span class="ach-tag">INTER-COLLEGE</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-dark" id="contact">
+  <div class="container">
+    <div class="contact-block reveal-up">
+      <span class="section-tag">CONTACT</span>
+      <h2 class="contact-headline">Let's build something<br /><em>real</em> together.</h2>
+      <p class="contact-sub">I'm open to internship opportunities, freelance projects, and collaborations. Reach out — I respond within 24 hours.</p>
+      <div class="contact-links">
+        <a href="mailto:lathigasri2006@gmail.com" class="contact-link">
+          <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><rect x="1" y="1" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M1 3l8 5 8-5" stroke="currentColor" stroke-width="1.5"/></svg>
+          lathigasri2006@gmail.com
+        </a>
+        <a href="tel:7448980958" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14.7 11.4l-3-2a1 1 0 0 0-1.2.1l-1.3 1.3A9.6 9.6 0 0 1 5.2 6.8L6.5 5.5a1 1 0 0 0 .1-1.2l-2-3A1 1 0 0 0 3.4 1L1.7 2.7C1 3.4 1 4.4 1.3 5.4A14 14 0 0 0 10.6 14.7c1 .3 2 .3 2.7-.4l1.7-1.7a1 1 0 0 0-.3-1.2z" stroke="currentColor" stroke-width="1.5"/></svg>
+          7448980958
+        </a>
+        <a href="https://linkedin.com/in/lathiga-sri-53a3112b9" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><line x1="5" y1="7" x2="5" y2="12" stroke="currentColor" stroke-width="1.5"/><line x1="5" y1="4.5" x2="5" y2="5.5" stroke="currentColor" stroke-width="2"/><path d="M8 7v5M8 9a2 2 0 0 1 4 0v3" stroke="currentColor" stroke-width="1.5"/></svg>
+          linkedin.com/in/lathiga-sri-53a3112b9
+        </a>
+        <a href="https://github.com/lathigasri" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1a7 7 0 0 0-2.21 13.64c.35.06.48-.15.48-.34v-1.19c-1.95.42-2.36-.94-2.36-.94-.32-.81-.78-1.02-.78-1.02-.64-.44.05-.43.05-.43.7.05 1.07.72 1.07.72.62 1.07 1.64.76 2.04.58.06-.45.24-.76.44-.93-1.56-.18-3.2-.78-3.2-3.47 0-.77.27-1.4.72-1.89-.07-.18-.31-.9.07-1.87 0 0 .59-.19 1.92.72A6.67 6.67 0 0 1 8 4.86c.59 0 1.19.08 1.75.24 1.34-.91 1.92-.72 1.92-.72.38.97.14 1.69.07 1.87.45.49.72 1.12.72 1.89 0 2.7-1.64 3.29-3.2 3.47.25.22.47.65.47 1.31v1.94c0 .19.13.4.48.34A7 7 0 0 0 8 1z" stroke="currentColor" stroke-width="0.5" fill="currentColor" opacity="0.8"/></svg>
+          github.com/lathigasri
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="footer-name">Lathiga Sri P</span>
+    <span class="footer-copy">© 2025 · Built with purpose</span>
+    <a class="dh-button" href="https://digitalheroesco.com" target="_blank" rel="noopener noreferrer">Built for Digital Heroes</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
